@@ -4,15 +4,19 @@
 
 using namespace std;
 
-// memory is wasted when we remove elements from the front of the queue
-// lol
-// credit: from LeetCode Queue-Implementation chapter
-class QueueStupid {
+/**
+ * Array Based Queue. The simplest implementation of queue.
+ * 
+ * memory is wasted when we remove elements from the front of the queue
+ * credit: LeetCode Queue-Implementation chapter
+ * 
+*/
+class QueueArrayBased {
     private:
         vector<int> data;
         int p_start;
     public:
-        QueueStupid() {
+        QueueArrayBased() {
             p_start = 0;
         }
 
