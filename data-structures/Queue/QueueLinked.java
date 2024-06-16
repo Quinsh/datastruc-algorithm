@@ -7,7 +7,7 @@ public interface Queue<T> {
     public int size();
 }
 
-public class QueueLinkedList<T> implements Queue<T> {
+public class QueueLinked<T> implements Queue<T> {
     // FIELDS
     private class Node {
         T val;
@@ -22,7 +22,7 @@ public class QueueLinkedList<T> implements Queue<T> {
     Node tail;
     int size;
 
-    public QueueLinkedList() {
+    public QueueLinked() {
         head = null;
         tail = null;
         size = 0;
